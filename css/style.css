@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,700,900&display=swap&subset=cyrillic-ext");
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,regular,500,600,700,800,900&display=swap&subset=cyrillic-ext");
+
+@font-face {
+	font-family: "HelveticaNeueCyr";
+	src: url("../fonts/HelveticaNeueCyr-Roman.woff2") format("woff2"),
+		url("../fonts/HelveticaNeueCyr-Roman.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px;
+}
+body {
+	line-height: 1;
+	background-color: rgba(128, 128, 128, 0.342);
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+/* ______________________________________________________ */
+
+.services {
+background: #F5F5F5 url('../img/services/blob.png') 1380px -600px / 623px 1437px no-repeat;
+}
+.servicescontainer {
+max-width: 1020px;
+padding: 110px 0px 113px 0px;
+margin: auto;
+font-family: "Roboto";
+}
+
+.servicesheaderlogotip {
+font-weight: 700;
+font-size: 12px;
+line-height: 2;
+letter-spacing: 2.5px;
+text-transform: uppercase;
+color: #5D62B5;
+padding-left: 36px;
+margin-bottom: 33px;
+}
+.servicesheaderlogotip::before {
+content: "";
+display: inline-block;
+width: 20px;
+height: 20px;
+background: url('../img/services/icon.svg') 0 0 no-repeat;
+margin: 0px 16px -2px -36px;	
+}
+.servicesheadertitle {
+font-weight: 900;
+font-size: 36px;
+line-height: 1.17;
+color: #000;
+margin-bottom: 78px;
+}
+.servicesmain {
+margin-bottom: 66px;
+}
+.servicesmainbox {
+display: inline-block;
+max-width: 324px;
+text-align: center;
+padding: 50px 43px 50px 43px;
+margin-right: 20px;
+margin-bottom: 20px;
+background: #FFF;
+border-radius: 20px;
+}
+.servicesmainbox:hover {
+box-shadow: 8px 16px 24px #2626263d;
+}
+.servicesmain .servicesmainbox:nth-child(3) {
+margin-right: 0;
+}
+.servicesmain .servicesmainbox:nth-child(4) {
+margin-bottom: 0;
+}
+.servicesmain .servicesmainbox:nth-child(5) {
+margin-bottom: 0;
+}
+.servicesmainbox:last-child {
+margin: 0px 0px 0px 0px;
+}
+.servicesmainimg {
+margin-bottom: 33px;
+}
+.servicesmaintitle {
+font-weight: 900;
+font-size: 19px;
+line-height: 1.37;
+color: #F2726F;
+margin-bottom: 20px;
+}
+.servicesmaintext {
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.15px;
+color: #4B4B4B;
+}
+.servicesbutton {
+max-width: 140px;
+margin: auto;
+text-align: center;
+}
+.servicesbuttonb {
+display: inline-block;
+font-weight: 700;
+font-size: 12px;
+line-height: 2;
+letter-spacing: 0.15px;
+text-transform: uppercase;
+background: #F2726F;
+color: #FFF;
+border-radius: 8px;
+padding: 12px 24px;
+}
+.servicesbuttonhidden {
+display: inline-block;
+font-weight: 700;
+font-size: 12px;
+line-height: 2;
+letter-spacing: 0.15px;
+text-transform: uppercase;
+background: #F2726F;
+color: #FFF;
+border-radius: 8px;
+padding: 12px 24px;
+margin-left: -150px;
+opacity: 0;
+visibility: hidden ;
+}
+.servicesbutton:hover .servicesbuttonb {
+opacity: 0;
+visibility: hidden;
+}
+.servicesbutton:hover .servicesbuttonhidden {
+opacity: 1;
+visibility: visible;
+}
+/* _______________________________________________________________ */
+
+.promise {
+background-color: #F5F5F5;
+}
+.promisecontainer {
+max-width: 1020px;
+margin: auto;
+padding: 84px 0px 125px 0px;
+font-family: "Roboto";
+}
+.promiseheaderlogotip {
+font-weight: 700;
+font-size: 12px;
+line-height: 2;
+letter-spacing: 2.5px;
+text-transform: uppercase;
+color: #5D62B5;
+padding-left: 36px;
+margin-bottom: 33px;
+}
+.promiseheaderlogotip::before {
+content: "";
+display: inline-block;
+width: 20px;
+height: 20px;
+background: url('../img/promise/icon.svg') 0 0 no-repeat;
+margin: 0px 16px -2px -36px;
+}
+.promiseheadertitle {
+font-weight: 900;
+font-size: 36px;
+line-height: 1.17;
+color: #000;
+margin-bottom: 68px;
+}
+.promisemain {
+font-size: 0;
+}
+.promisemaincontant {
+display: inline-block;	
+max-width: 324px;
+}
+.promisemaincontant:not(:last-child) {
+margin-right: 24px;
+}
+.promisemaincontantimg {
+display: inline-block;
+width: 63px;
+vertical-align: top;
+margin-right: 23px;
+}
+.promisemaincontantsub {
+display: inline-block;
+max-width: 238px;
+vertical-align: top;
+}
+.promisemaincontanttitle {
+font-weight: 900;
+font-size: 19px;
+line-height: 1.37;
+color: #F2726F;
+margin-bottom: 20px;
+}
+.promisemaincontanttext {
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.15px;
+color: #4B4B4B;
+}
+/* ________________________________________________________________ */
+
+.impact {
+background: #29C3BE url('../img/impact/blob.png') 1180px 0 / 695px 308px no-repeat;
+}
+.impactcontainer {
+max-width: 1020px;
+margin: auto;
+padding: 112px 0px 212px 0px;
+font-family: "Roboto";
+}
+.impactheader {
+margin-bottom: 79px;
+}
+.impactheadercontent {
+display: inline-block;
+}
+.impactheadercontentlogotip {
+font-weight: 700;
+font-size: 12px;
+line-height: 2;
+letter-spacing: 2.5px;
+text-transform: uppercase;
+color: #FFF;
+padding-left: 36px;
+margin-bottom: 32px;
+}
+.impactheadercontentlogotip::before {
+content: "";
+display: inline-block;
+width: 20px;
+height: 20px;
+background: url('../img/impact/icon.svg') 0 0 no-repeat;
+margin: 0px 16px -2px -36px;
+}
+.impactheadercontenttitle {
+	max-width: 411px;
+font-weight: 900;
+font-size: 36px;
+line-height: 1.17;
+color: #FFF;
+}
+.impactheaderimg {
+text-align: right;
+margin: -325px 0px 0px 0px;
+}
+.impactheaderimgsub {
+border-radius: 40px;
+}
+.impactmain {
+font-size: 0;
+}
+.impactmainbox {
+display: inline-block;
+max-width: 237px;
+}
+.impactmainbox:not(:last-child) {
+margin-right: 24px;
+}
+.impactmainboximg {
+display: inline-block;
+width: 76px;
+margin-right: 11px;
+}
+.impactmainboxcontant {
+display: inline-block;
+width: 150px;
+}
+.impactmainboxcontanttitle {
+font-weight: 900;
+font-size: 36px;
+line-height: 1.17;
+color: #FFF;
+margin-bottom: 3px;
+}
+.impactmainboxcontanttext {
+font-weight: 700;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.15px;
+color: #5D62B5;
+}
+
+
+
+
+
+
+
+
+
